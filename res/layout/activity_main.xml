@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/edBillAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Enter bill amount"
+        android:inputType="number|numberDecimal" />
+
+    <Button
+        android:id="@+id/btn20"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Btn15"
+        android:layout_alignBottom="@+id/Btn15"
+        android:layout_alignRight="@+id/edBillAmount"
+        android:text="20%" />
+
+    <TextView
+        android:id="@+id/tvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edBillAmount"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="125dp"
+        android:text="Tip is : $"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btn10"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edBillAmount"
+        android:layout_below="@+id/edBillAmount"
+        android:layout_marginTop="57dp"
+        android:text="10%" />
+
+    <Button
+        android:id="@+id/Btn15"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn10"
+        android:layout_alignBottom="@+id/btn10"
+        android:layout_toRightOf="@+id/tvTip"
+        android:text="15%" />
+
+    <TextView
+        android:id="@+id/tvCurrency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tcTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvTip"
+        android:layout_alignBottom="@+id/tvTip"
+        android:layout_alignRight="@+id/btn20"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
